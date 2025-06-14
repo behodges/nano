@@ -28,7 +28,7 @@ jobs:
           npm install
           npm install -g pnpm
           pnpm install
-          pnpm add bufferutil dreamland-router esbuild sqlite3
+          pnpm approve-builds --a
           pnpm install
           pnpm run build --if-present
           pnpm run test --if-present
