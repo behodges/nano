@@ -32,6 +32,9 @@ jobs:
       - name: npm approve builds
         run: printf "a\n" | pnpm approve-builds
 
+      - name: chemical update
+        run: pnpm update chemicaljs
+        
       - name: npm build
         run: pnpm build
         
