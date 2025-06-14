@@ -28,7 +28,7 @@ jobs:
           npm install
           npm install -g pnpm
           pnpm install
-          pnpm config set auto-install-peers true --location project
+          pnpm add bufferutil dreamland-router esbuild sqlite3
           pnpm install
           pnpm run build --if-present
           pnpm run test --if-present
