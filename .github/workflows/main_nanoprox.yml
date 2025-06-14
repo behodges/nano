@@ -28,7 +28,8 @@ jobs:
           npm install
           npm install -g pnpm
           pnpm install
-          pnpm approve-builds
+          pnpm config set auto-install-peers true --location project
+          pnpm install
           pnpm run build --if-present
           pnpm run test --if-present
 
