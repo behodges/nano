@@ -30,10 +30,7 @@ jobs:
           pnpm install
 
       - name: npm approve builds
-        run: pnpm approve-builds
-
-      - name: npm approve builds a
-        run: a
+        run: pnpm approve-builds -a
 
       - name: npm build
         run: pnpm start
